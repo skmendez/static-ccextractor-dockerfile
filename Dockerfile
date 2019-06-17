@@ -1,4 +1,4 @@
-FROM alpine:3.5 as ccextractor
+FROM alpine:3.9 as ccextractor
 
 RUN mkdir -p -m a+rwx /tmp/cc
 
