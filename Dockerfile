@@ -4,8 +4,8 @@ RUN mkdir -p -m a+rwx /tmp/cc
 
 WORKDIR /tmp/cc
 
-RUN echo 'http://dl-cdn.alpinelinux.org/alpine/v3.5/main' >| /etc/apk/repositories
-RUN echo 'http://dl-cdn.alpinelinux.org/alpine/v3.5/community' >> /etc/apk/repositories
+RUN echo 'http://dl-cdn.alpinelinux.org/alpine/v3.9/main' >| /etc/apk/repositories
+RUN echo 'http://dl-cdn.alpinelinux.org/alpine/v3.9/community' >> /etc/apk/repositories
 RUN apk update
 RUN apk upgrade
 RUN apk add --update bash zsh alpine-sdk perl
